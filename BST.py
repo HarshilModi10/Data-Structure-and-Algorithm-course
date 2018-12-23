@@ -53,12 +53,14 @@ class binary_search_tree(object):
         
         return node.key
     
+    #Helper for get_max
     def get_max_helper(self):
         if self.root:
             return self.get_max(self.root)
         else:
             return -1
-    
+        
+    #O(LogN)
     def get_max(self, node):
         
         if node.right_child:
@@ -68,7 +70,7 @@ class binary_search_tree(object):
     
     def treverse(self):
         if self.root:
-            self.treverse_in_order(self, self.root)
+            self.treverse_in_order(self.root)
         
     def treverse_in_order(self, node):
         
@@ -88,7 +90,7 @@ def main():
     bst.insert(8)
     bst.insert(3)
     bst.insert(13)
-    bst.treverse()
+    bst.treverse() # Output: 3, 5, 8, 13
 
 main()
             
