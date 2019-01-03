@@ -87,12 +87,13 @@ class Linkedlist(object):
 def main():
     
     linkedlist = Linkedlist()
-    linkedlist.insert_start(32);
-    linkedlist.insert_start(12);
-    linkedlist.insert_start(3);
-    linkedlist.insert_end(122);
+    linkedlist.insert_start(32)
+    linkedlist.insert_start(12)
+    linkedlist.insert_start(3)
+    linkedlist.insert_end(122)
     
-    linkedlist.traverse_linked_list();
+    linkedlist.traverse_linked_list() # 3, 12, 32, 122
+    
             
 main()
     
